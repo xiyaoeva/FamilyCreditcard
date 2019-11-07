@@ -1,0 +1,64 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<title>免息期</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div>
+		<h1 style="font-size:30px"></font></h1>
+		<p style="text-align:center">
+			<br>
+			<p style="font-size:15px; color:red">最大免息期</p>
+			<p id="0" style="color:red"></p>
+			<br><br>
+			<p style="font-size:15px">垚浦发信用卡</p>
+			<p id="1"></p> 
+			<br><br>
+			<p style="font-size:15px">垚中行信用卡</p>
+			<p id="2"></p>
+			<br><br>
+			<p style="font-size:15px">垚+晖工行(星座)信用卡</p>
+			<p id="3"></p>
+			<br><br>
+			<p style="font-size:15px">晖工行最早的工资信用卡</p>
+			<p id="4"></p> 
+			<br><br>
+			<p style="font-size:15px">杰＋晖中行信用卡</p>
+			<p id="5"></p>
+			<br><br>
+			<p style="font-size:15px">杰建行信用卡</p>
+			<p id="6"></p> 
+			<br><br>
+			<p style="font-size:15px">垚＋杰+闫花呗</p>
+			<p id="7"></p>
+			<br><br>
+			<p style="font-size:15px">晖花呗</p>
+			<p id="8"></p>
+			<br><br>
+			<p style="font-size:15px">垚＋闫白条</p>
+			<p id="9"></p>
+			<br><br>
+			<p style="font-size:15px">晖白条</p>
+			<p id="10"></p>
+			<br><br>
+			<p style="font-size:15px">杰白条</p>
+			<p id="11"></p>
+		</p>
+	</div>
+<script type="text/javascript">
+const Z0PFYao=12;const Z0ZGYao=8;const Z0GSYaoHui=17;const Z0GSHui=1;const Z0ZGJieHui=19;const Z0JSJie=24;const Z0HB=1;const Z0BTYanYao=25;const Z0BTHUi=24;const Z0BTJie=15;const HT0PFYao=20;const HT0BT=9;const HT0ZG=20;const HT0GSHui=24;const HT0HBYaoJieYan=8;const HT0HBHui=9;const HR0GSYaoHui=10;const HR0JSJie=13;Date.prototype.getBJDate=function(){var d=new Date();currentDate=new Date();tmpHours=currentDate.getHours();var time_zone=-d.getTimezoneOffset()/60;if(time_zone<0){time_zone=Math.abs(time_zone)+8;currentDate.setHours(tmpHours+time_zone)}else{time_zone=time_zone-8;currentDate.setHours(tmpHours-time_zone)}
+return currentDate}
+function getMXQA(ZDR,TCT){var HKR=new Date();HKR=HKR.getBJDate();var today=new Date();today=today.getBJDate();var MXQ=0
+var ZDY=0;if(today.getDate()>=ZDR){if((today.getMonth()+1)>12){ZDY=1}else{ZDY=today.getMonth()+1}}else{ZDY=today.getMonth()}
+if(ZDY==today.getMonth()){HKR.setDate(ZDR+TCT)}else{HKR.setMonth(ZDY);HKR.setDate(ZDR+TCT)}
+var timesDiff=HKR.getTime()-today.getTime();var a=timesDiff/(1000*60*60*24);MXQ=Math.ceil(timesDiff/(1000*60*60*24));return MXQ}
+function getMXQB(ZDR,RQS){var HKR=new Date();HKR=HKR.getBJDate();var today=new Date();today=today.getBJDate();var MXQ=0
+var ZDY=0;if(today.getDate()>=ZDR){if((today.getMonth()+1)>12){ZDY=1}else{ZDY=today.getMonth()+1}}else{ZDY=today.getMonth()}
+if(ZDY==today.getMonth()){HKR.setMonth(ZDY+1);HKR.setDate(RQS)}else{HKR.setMonth(ZDY+2);HKR.setDate(RQS)}
+var timesDiff=HKR.getTime()-today.getTime();var a=timesDiff/(1000*60*60*24);MXQ=Math.ceil(timesDiff/(1000*60*60*24));return MXQ}
+var Maxdays=0;var Days=getMXQA(Z0PFYao,HT0PFYao);Maxdays=(Maxdays>Days)?(Maxdays):(Days);document.getElementById("1").innerHTML=Days;Days=getMXQA(Z0ZGYao,HT0ZG);Maxdays=(Maxdays>Days)?(Maxdays):(Days);document.getElementById("2").innerHTML=Days;Days=getMXQB(Z0GSYaoHui,HR0GSYaoHui);Maxdays=(Maxdays>Days)?(Maxdays):(Days);document.getElementById("3").innerHTML=Days;Days=getMXQA(Z0GSHui,HT0GSHui);Maxdays=(Maxdays>Days)?(Maxdays):(Days);document.getElementById("4").innerHTML=Days;Days=getMXQA(Z0ZGJieHui,HT0ZG);Maxdays=(Maxdays>Days)?(Maxdays):(Days);document.getElementById("5").innerHTML=Days;Days=getMXQB(Z0JSJie,HR0JSJie);Maxdays=(Maxdays>Days)?(Maxdays):(Days);document.getElementById("6").innerHTML=Days;Days=getMXQA(Z0HB,HT0HBYaoJieYan);Maxdays=(Maxdays>Days)?(Maxdays):(Days);document.getElementById("7").innerHTML=Days;Days=getMXQA(Z0HB,HT0HBHui);Maxdays=(Maxdays>Days)?(Maxdays):(Days);document.getElementById("8").innerHTML=Days;Days=getMXQA(Z0BTYanYao,HT0BT);Maxdays=(Maxdays>Days)?(Maxdays):(Days);document.getElementById("9").innerHTML=Days;Days=getMXQA(Z0BTHUi,HT0BT);Maxdays=(Maxdays>Days)?(Maxdays):(Days);document.getElementById("10").innerHTML=Days;Days=getMXQA(Z0BTJie,HT0BT);Maxdays=(Maxdays>Days)?(Maxdays):(Days);document.getElementById("11").innerHTML=Days;document.getElementById("0").innerHTML=Maxdays
+</script>
+</body>
+</html>
